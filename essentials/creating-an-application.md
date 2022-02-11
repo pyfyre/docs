@@ -2,7 +2,7 @@
 
 ## The runApp method
 
-Every PyFyre application, the app starts to the class that inherits the `UsesState` class passed as the first parameter of the `runApp` method provided by PyFyre:
+Every PyFyre application starts to the class that inherits the `UsesState` class that's passed as the first parameter of the `runApp` method provided by PyFyre:
 
 ```python
 from pyfyre.widgets import *
