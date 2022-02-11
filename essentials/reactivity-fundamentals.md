@@ -1,6 +1,10 @@
 # Reactivity Fundamentals
 
-**`self.update()`**: used to rerender the component. Instead of rerendering the whole app when a state change, you'll have the power to just rerender the component only. When you call this, it will run the `build` method again and the component rerenders.
+`UsesState` provides a method called `update`, basically it rerenders the component as a whole, it deletes the component on the DOM and recreates it.&#x20;
+
+Instead of rerendering the whole app when a state change, you'll have the power to just rerender the component only. When you call this, it will run the `build` method again and the component rerenders.
+
+To use the API, you must call `self.update()` on a component that inherits the `UsesState` class.
 
 ```python
 from pyfyre.widgets import *
