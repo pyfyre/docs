@@ -7,6 +7,7 @@
 
 * [Creating an Application](essentials/creating-an-application.md)
 * [Reactivity Fundamentals](essentials/reactivity-fundamentals.md)
+* [Class and Props Bindings](essentials/class-and-props-bindings.md)
 
 ## Guides
 
