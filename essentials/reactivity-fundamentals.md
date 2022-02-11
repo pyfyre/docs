@@ -34,4 +34,4 @@ runApp(
 )
 ```
 
-Every state must sit to the `__init__` method. This is because if you initialize a stateful variable t the `build` method, when the component rerenders, the variable is also reinitialize also to its default value.
+Every state must sit to the `__init__` method. This is because if you initialize a stateful variable to the `build` method, when the component rerenders, the variable is also reinitialize also to its default value.
