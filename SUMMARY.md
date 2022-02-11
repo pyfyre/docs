@@ -26,3 +26,10 @@
 
 * [Widgets](api-reference/widgets/README.md)
   * [Container](api-reference/widgets/container.md)
+  * [Text](api-reference/widgets/text.md)
+  * [Page 6](api-reference/widgets/page-6.md)
+  * [Page 5](api-reference/widgets/page-5.md)
+  * [Page 4](api-reference/widgets/page-4.md)
+  * [Page 3](api-reference/widgets/page-3.md)
+  * [Page 2](api-reference/widgets/page-2.md)
+  * [Page 1](api-reference/widgets/page-1.md)
