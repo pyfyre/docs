@@ -28,7 +28,7 @@ runApp(
 )
 ```
 
-Fortunately, Python supports a lovely string interpolation with F-string formatting.
+Fortunately, Python supports lovely string interpolation with F-string formatting.
 
 You can access widget's attributes on the DOM on `props` parameter. It's a Python dictionary where the `key` is the name of the attribute and the `value` is the value of the attribute.
 
