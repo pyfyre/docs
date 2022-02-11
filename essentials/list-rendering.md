@@ -2,7 +2,7 @@
 
 ### ListBuilder
 
-We can use ListBuilder widget to loop through an array in Python to render it on the screen.
+We can use ListBuilder widget to loop through an array in Python to render it on the screen and will just index it.
 
 ```python
 from pyfyre.widgets import *
