@@ -6,7 +6,7 @@
 ## Essentials
 
 * [Creating an Application](essentials/creating-an-application.md)
-* [Reactivity Fundamentals](essentials/reactivity-fundamentals.md)
+* [UsesState Fundamentals](essentials/usesstate-fundamentals.md)
 * [Class and Props Bindings](essentials/class-and-props-bindings.md)
 * [List Rendering](essentials/list-rendering.md)
 
