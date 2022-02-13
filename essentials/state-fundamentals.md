@@ -1,4 +1,4 @@
-# Reactivity Fundamentals
+# State Fundamentals
 
 `UsesState` provides a method called `update`, basically it rerenders the component as a whole, it deletes the component on the DOM and recreates it.&#x20;
 
@@ -35,3 +35,62 @@ runApp(
 ```
 
 Every state must sit to the `__init__` method. This is because if you initialize a stateful variable to the `build` method, when the component rerenders, the variable is also reinitialize also to its default value.
+
+## State class
+
+You sometimes need a variable or a state to be shared between components, that's also possible with PyFyre.
+
+```python
+state = State({
+    "count": 0
+})
+```
+
+```python
+return Text(state.count)
+```
+
+And you can create a new file for shared State among file components.
+
+Similarly, if you just only want one state to be stored in a `State` class, you can just:
+
+```python
+state = State(0)
+
+class App(UsesState):
+    def build(self):
+        return Text(state.value)
+```
+
+If you want to access them and change their values, you can just change them directly.
+
+```python
+state.count = state.count + 1
+```
+
+### Complete example
+
+```python
+from pyfyre.widgets import *
+from pyfyre.pyfyre import runApp
+
+state = State({
+    "count": 0
+})
+
+class App(UsesState):
+    def build(self):
+
+        def increment(ev):
+            state.count = state.count + 1
+            self.update()
+
+        return Container(
+            children=[
+                Text(state.count),
+                Button("+", onClick=increment)
+            ]
+        )
+
+runApp(App())
+```
