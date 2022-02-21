@@ -41,6 +41,8 @@ The full tutorial with explanation of this example can be found [here](samples-a
 
 ## Join us!
 
+PyFyre is a newly-developed framework and still in a constant development. It's first initial commit was on _Mar 11, 2021_. You can support the development of PyFyre by contributing to its development on [GitHub](https://github.com/pyfyre/pyfyre).
+
 * You can report bugs and discuss features on our [GitHub Issues Page](https://github.com/pyfyre/pyfyre/issues)
 * Want to support the development of PyFyre and help us make it more better? Make pull requests if you'd like to help out!
 
