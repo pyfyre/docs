@@ -19,7 +19,7 @@ class App(UsesState):
         def change_text(ev):
             self.text = "You clicked me!"
             
-            # A state change and the component UI hasn't adapt to it
+            # A state change and the component UI haven't adapted to it
             # yet, to rerender the component, you must call `self.update()`
             self.update()
 
