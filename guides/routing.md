@@ -56,7 +56,7 @@ class Users(UsesState):
 
 class UserProfile(UsesState):
     def build(self):
-        slug = Router.query()['id']
+        slug = Router.query()['slug']
 
         return Text(f"User: {slug}")
 
