@@ -9,32 +9,32 @@ description: Welcome to PyFyre documentation!
 PyFyre is a web frontend framework for building reactive static user interfaces on the web using only using Python.
 
 * **Component-based framework.** Developers who have experience of using other frontend frameworks should feel quite at home when using PyFyre, especially Flutter developers.
-* **Supports CPython interoperability.** Allowing developers to use existing PyPi packages on the client-side web (Still Experimental)
-* **Reactive.** PyFyre automatically tracks Python state changes and efficiently updates the DOM when changes happen - as fast as vanilla JavaScript.
+* **Supports CPython interoperability.** Allowing developers to use existing PyPi packages on the client-side web.
+* **Truly reactive.** No virtual DOM. PyFyre automatically tracks Python state changes and efficiently updates the DOM when changes happen - as fast as vanilla JavaScript.
+* **Static Site Generator (SSG**). PyFyre generates static site from the Python code you wrote that makes your website SEO friendly.
 
 Here's a simple example:
 
 ```python
-from pyfyre.widgets import *
-from pyfyre.pyfyre import runApp
+from pyfyre.nodes import *
+from pyfyre import render, State
 
-class MyWebpage(UsesState):
-    def __init__(self):
-        self.count = 0
+class App(Widget):
+	def __init__(self):
+		self.count = State[int](0)
+		super().__init__()
+	
+	def build(self):
+	
+		def increment(ev):
+			self.count.set_value(self.count.value + 1)
+	
+		return Button(
+			onclick=increment,
+			children=lambda: [Text(self.count)]
+		)
 
-    def build(self):
-        
-        def increment(ev):
-            self.count = self.count + 1
-            self.update() # Rerenders the component
-
-        return Container(
-            children=[
-                Button(f"Count is: {self.count}", onClick=increment)
-            ]
-        )
-
-runApp(MyWebpage())
+render({"/": lambda: App()})
 ```
 
 The full tutorial with explanation of this example can be found [here](samples-and-tutorials/cookbook/create-a-counter-app.md)
