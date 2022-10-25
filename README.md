@@ -15,6 +15,7 @@ PyFyre is a web frontend framework for building reactive static user interfaces 
 
 Here's a simple example:
 
+{% code title="src/index.py" lineNumbers="true" %}
 ```python
 from pyfyre.nodes import *
 from pyfyre import render, State
@@ -36,6 +37,7 @@ class App(Widget):
 
 render({"/": lambda: App()})
 ```
+{% endcode %}
 
 The full tutorial with explanation of this example can be found [here](samples-and-tutorials/cookbook/create-a-counter-app.md)
 
