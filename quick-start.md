@@ -30,7 +30,7 @@ Start your app and create a new workspace to develop your apps.
 To create a new app, run the PyFyre CLI command:
 
 ```
-pyfyre create-app my-cool-app
+pyfyre create my-cool-app
 ```
 
 You can replace \`my-cool-app\` with the name of the app you desired.
@@ -43,9 +43,9 @@ PyFyre has a development server with a hot reload that detects changes in your c
 2. Run PyFyre CLI command:
 
 ```
-pyfyre runapp
+pyfyre run
 ```
 
 And voila! You now have a running PyFyre app on your local machine.
 
-_Note: Once you have run the app, PyFyre will generate a folder called_ `__serve__`_, the folder contains all the files the running server need. You can delete it once_ `runapp` _has finished._
+_Note: Once you have run the app, PyFyre will generate a folder called_ `_pyfyre`_, the folder contains all the files the running server need. You can delete it once_ `run` _has finished._
